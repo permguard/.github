@@ -6,4 +6,4 @@ All rights reserved. Unauthorized use, reproduction, or distribution of the "Per
 
 For inquiries regarding the use of the "PermGuard" trademark and its associated logo(s), please contact Nitro Agility S.r.l. at <opensource@nitroagility.com>.
 
-Copyright © 2022 Nitro Agility S.r.l. All Rights Reserved.
+Copyright © 2024 Nitro Agility S.r.l. All Rights Reserved.
