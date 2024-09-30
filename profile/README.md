@@ -7,7 +7,7 @@
 </p>
 
 <p align="left">
-  <img src="https://github.com/permguard/permguard/blob/main/assets/permguard.png?raw=true" class="center" width="400px" height="auto"/>
+  <img src="https://github.com/permguard/permguard/blob/main/assets/permguard.svg?raw=true" class="center" width="400px" height="auto"/>
 </p>
 
 Created by [Nitro Agility](https://www.nitroagility.com/).
