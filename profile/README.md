@@ -6,7 +6,7 @@
   <img src="https://raw.githubusercontent.com/permguard/permguard-assets/main/pink-txt/1line.svg" class="center" width="400px" height="auto"/>
 </p>
 
-<p align="left">
+<p align="center">
   <img src="https://github.com/permguard/permguard/blob/main/assets/permguard.png?raw=true" class="center"/>
 </p>
 
