@@ -4,6 +4,11 @@
 
 [Watch the video on YouTube](https://www.youtube.com/watch?v=x2hRB2b59yc)
 
+Learn:
+
+- [Permguard Docs](https://www.permguard.com/)
+- [ZTAuth*: Zero Trust AuthN/AuthZ Models and Trusted Delegations](https://medium.com/ztauth)
+
 `Permguard` is an Open Source Zero-Trust Auth* Provider for cloud-native, edge, and multi-tenant apps, decoupled from application code and leveraging `Policy-as-Code` for centralized, scalable permission management.
 
 This repository contains markdown files for the `Permguard` project.
