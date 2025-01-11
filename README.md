@@ -1,8 +1,8 @@
 # Permguard
 
-[![Watch the video on YouTube](https://raw.githubusercontent.com/permguard/permguard-assets/refs/heads/main/video/permguard-thumbnail-preview.png)](https://www.youtube.com/watch?v=x2hRB2b59yc)
+[![Watch the video on YouTube](https://raw.githubusercontent.com/permguard/permguard-assets/refs/heads/main/video/permguard-thumbnail-preview.png)](https://youtu.be/cH_boKCpLQ8?si=i1fWFHT5kxQQJoYN)
 
-[Watch the video on YouTube](https://www.youtube.com/watch?v=x2hRB2b59yc)
+[Watch the video on YouTube](https://youtu.be/cH_boKCpLQ8?si=i1fWFHT5kxQQJoYN)
 
 Learn:
 
