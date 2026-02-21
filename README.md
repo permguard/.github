@@ -6,8 +6,9 @@
 
 Learn:
 
-- [Permguard Docs](https://www.permguard.com/)
-- [ZTAuth*: Zero Trust AuthN/AuthZ Models and Trusted Delegations](https://medium.com/ztauth)
+- [Permguard Docs](https://docs.permguard.com/)
+
+> **Govern Authority. From Policies to Continuity.**
 
 **Permguard** is the authorization engine for both worlds: enforce policies on today's systems, enforce continuity on tomorrow's. One engine for governance, AI agents, and distributed execution.
 This repository contains markdown files for the **Permguard** project.
