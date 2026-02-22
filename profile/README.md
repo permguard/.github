@@ -12,10 +12,14 @@
 
 [Watch the video on YouTube](https://youtu.be/cH_boKCpLQ8?si=i1fWFHT5kxQQJoYN)
 
-> **Govern Authority. From Policies to Continuity.**
+## What is Permguard?
 
-**Permguard** is the authorization engine for both worlds: enforce policies on today's systems, enforce continuity on tomorrow's. One engine for governance, AI agents, and distributed execution.
-This repository contains markdown files for the **Permguard** project.
+**Permguard** is a distributed authorization platform that combines **governance** and **authority** in a single system, built on `Zero Trust` principles.
+
+- **Governance** — policy-based authorization: who can do what on which resources
+- **Authority** — [PIC-compliant](https://www.pic-protocol.org) authority continuity: causal, origin-bound, monotonically restricted execution chains
+
+Permguard can be used for governance alone, or composed with authority continuity for full PIC enforcement.
 
 <p align="center">
   <img src="https://github.com/permguard/permguard/blob/main/assets/permguard.png?raw=true" class="center"/>
