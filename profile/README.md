@@ -12,6 +12,8 @@
 
 [Watch the video on YouTube](https://youtu.be/cH_boKCpLQ8?si=i1fWFHT5kxQQJoYN)
 
+> **Govern Authority. From Policies to Continuity.**
+
 **Permguard** is the authorization engine for both worlds: enforce policies on today's systems, enforce continuity on tomorrow's. One engine for governance, AI agents, and distributed execution.
 This repository contains markdown files for the **Permguard** project.
 
