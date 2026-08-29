@@ -64,7 +64,7 @@ written by different people, in different languages, and still compose.
 | --- | --- | --- | --- |
 | [Cedar](https://www.cedarpolicy.com) | `cedar` (`cedar-policy` 4.x) | the request | stable |
 | [Rego](https://www.openpolicyagent.org/docs/policy-language) | `rego` (`regorus`) | the request | stable |
-| [Dogwood](https://github.com/awslabs/dogwood) | `dogwood` (`amzn-dogwood-language`) | the request **and** a durable history | experimental |
+| [Dogwood](https://github.com/dogwood-policy/dogwood) | `dogwood` (`amzn-dogwood-language`) | the request **and** a durable history | experimental |
 
 A language is a **build**, not a deployment action: all three are compiled in. What a deployment
 chooses is whether a ledger naming a runtime will be *served*, and the experimental one is gated —
@@ -73,7 +73,7 @@ see below.
 ### Experimental: Dogwood, and deciding from what has happened
 
 Cedar and Rego answer *may this subject do this to this?* from the request in front of them.
-[Dogwood](https://github.com/awslabs/dogwood) is Cedar plus **history**: a policy may ask what has
+[Dogwood](https://github.com/dogwood-policy/dogwood) is Cedar plus **history**: a policy may ask what has
 happened recently — `formerly`, `since`, aggregations over a window — as well as what is being
 asked now.
 
@@ -113,7 +113,7 @@ than a default that moved.
 Working configurations ship as `config.local-dogwood.yml` beside each server crate, and
 [`examples/dogwood-session-access`](https://github.com/permguard/permguard/tree/main/examples/dogwood-session-access) is a whole ledger — schemas,
 policies, and a test that asserts the verdicts its README claims. The contract is documented under
-[Temporal Interface](https://community.permguard.com/docs/0.1.x/data-plane/temporal-interface).
+[Temporal Interface](https://docs.permguard.com/data-plane/temporal-interface).
 
 **Bring your own data plane.** The objects are self-describing and the engines are a library.
 Run Permguard's data plane, or pull the ledger and evaluate **in your own process** — no PDP hop,
