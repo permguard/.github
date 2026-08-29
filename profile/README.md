@@ -5,7 +5,7 @@
 [![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/permguard/permguard)](https://github.com/permguard/permguard/issues)
 [![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-pr/permguard/permguard)](https://github.com/permguard/permguard/pulls)
 [![GitHub contributors](https://img.shields.io/github/contributors/permguard/permguard)](https://github.com/permguard/permguard/graphs/contributors)
-[![GitHub License](https://img.shields.io/github/license/permguard/permguard)](https://github.com/permguard/permguard?tab=Apache-2.0-1-ov-file#readme)
+[![GitHub License](https://img.shields.io/github/license/permguard/permguard)](https://github.com/permguard/permguard/blob/main/LICENSE)
 [![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/permguard)](https://x.com/intent/follow?original_referer=https%3A%2F%2Fdeveloper.x.com%2F&ref_src=twsrc%5Etfw%7Ctwcamp%5Ebuttonembed%7Ctwterm%5Efollow%7Ctwgr%5ETwitterDev&screen_name=Permguard)
 
 <p align="center">
@@ -113,7 +113,7 @@ than a default that moved.
 Working configurations ship as `config.local-dogwood.yml` beside each server crate, and
 [`examples/dogwood-session-access`](https://github.com/permguard/permguard/tree/main/examples/dogwood-session-access) is a whole ledger — schemas,
 policies, and a test that asserts the verdicts its README claims. The contract is documented under
-[Temporal Interface](https://permguard.com/docs/0.1.x/data-plane/temporal-interface).
+[Temporal Interface](https://community.permguard.com/docs/0.1.x/data-plane/temporal-interface).
 
 **Bring your own data plane.** The objects are self-describing and the engines are a library.
 Run Permguard's data plane, or pull the ledger and evaluate **in your own process** — no PDP hop,
