@@ -9,7 +9,7 @@
 [![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/permguard)](https://x.com/intent/follow?original_referer=https%3A%2F%2Fdeveloper.x.com%2F&ref_src=twsrc%5Etfw%7Ctwcamp%5Ebuttonembed%7Ctwterm%5Efollow%7Ctwgr%5ETwitterDev&screen_name=Permguard)
 
 <p align="center">
-  <img src="assets/permguard-banner.png" alt="Permguard" width="820">
+  <img src="../assets/permguard-banner.png" alt="Permguard" width="820">
 </p>
 
 **Authorization policy, versioned like code and shipped like code.**
