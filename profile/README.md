@@ -111,7 +111,7 @@ replication shapes may still change, and the switch is what makes accepting that
 than a default that moved.
 
 Working configurations ship as `config.local-dogwood.yml` beside each server crate, and
-[`examples/dogwood-session-access`](examples/dogwood-session-access) is a whole ledger — schemas,
+[`examples/dogwood-session-access`](https://github.com/permguard/permguard/tree/main/examples/dogwood-session-access) is a whole ledger — schemas,
 policies, and a test that asserts the verdicts its README claims. The contract is documented under
 [Temporal Interface](https://permguard.com/docs/0.1.x/data-plane/temporal-interface).
 
@@ -138,9 +138,8 @@ policy partitions. It is not an implementation of, nor a compatibility claim for
 authorization API. The shape will look familiar — a subject, an action, a resource, a context in; a
 decision and a reason out — because that is the obvious shape for the question. What owning it
 buys is that the parts nobody else specifies are specified *here*, in
-[`crates/permguard-languages/src/request.rs`](crates/permguard-languages/src/request.rs), and can
+[`crates/permguard-languages/src/request.rs`](https://github.com/permguard/permguard/blob/main/crates/permguard-languages/src/request.rs), and can
 change when Permguard needs them to. No badge, and no promise somebody else's document still
 holds.
 
 Created by [Nitro Agility](https://www.nitroagility.com/).
-
