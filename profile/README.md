@@ -19,7 +19,7 @@
 
 Permguard is an open-source platform for authorization and trusted execution, created by [Nitro Agility](https://www.nitroagility.com/).
 It is made of two projects that share one model: authority is versioned, signed, and verifiable after the fact.
-**Permguard** decides what a subject may do, from policies kept in a content-addressed ledger.
+**Permguard** is the authorization layer: policies versioned like code, decisions made wherever your software runs.
 **Permguard Agentic Fabric** carries that authority into the execution of AI agents, so that what an agent does never exceeds what it was granted.
 
 ## Permguard
@@ -30,13 +30,13 @@ It is made of two projects that share one model: authority is versioned, signed,
 
 **Authorization policy, versioned like code and shipped like code.**
 
-Permguard keeps your policies in a content-addressed, Git-like ledger and distributes signed versions over a protocol built for it.
-It answers `can this subject do this to this?` either from its own data plane, or from inside your process, at zero network cost.
+Permguard is an open-source authorization platform.
+Policies live in a Git-like ledger, ship as signed versions, and are evaluated close to where decisions happen: in Permguard's own data plane, or embedded inside your application at zero network cost.
 
-- **Policy is a repository**, not a blob: every decision cites the exact commit and the identity of the policy that decided it.
-- **One question, many engines**: a ledger holds Cedar and Rego partitions side by side, with Dogwood as an experimental third, and an explicit deny from any partition wins.
-- **Bring your own data plane**: pull the ledger and evaluate in your own process, with the same manifest, the same engines, and the same answer.
-- **Decisions are evidence**: every decision can be recorded in a hash-chained log and verified afterwards by somebody who does not trust the plane that wrote it.
+It is built for the questions authorization asks today, not only "can this user do this?".
+A subject is optional: a request may describe just a resource and an action, capability style, so the same model covers users, services, workloads and AI agents.
+One ledger can host many profiles and many policy engines, such as Cedar and Rego, so different teams can write different rules in the language that fits and still get one composed answer.
+Every decision is traceable to the exact policy version that produced it and can be verified after the fact.
 
 Repository: [permguard/permguard](https://github.com/permguard/permguard).
 Documentation: [docs.permguard.com](https://docs.permguard.com/).
