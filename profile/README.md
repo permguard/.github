@@ -59,7 +59,4 @@ The **Agentic Trust Fabric (ATF)** preserves trust and authority continuity acro
 
 Repository: [permguard/permguard-agentic-fabric](https://github.com/permguard/permguard-agentic-fabric).
 
-> Early stage.
-> Documentation and code will follow.
-
 Created by [Nitro Agility](https://www.nitroagility.com/).
