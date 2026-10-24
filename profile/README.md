@@ -115,21 +115,32 @@ permguard --help
 Repository: [permguard/permguard](https://github.com/permguard/permguard).
 SDKs for [Go](https://github.com/permguard/sdk-go), [Java](https://github.com/permguard/sdk-java), [.NET](https://github.com/permguard/sdk-netcore), [Node.js](https://github.com/permguard/sdk-node), [Python](https://github.com/permguard/sdk-python) and [Rust](https://github.com/permguard/sdk-rust).
 
-### Agentic Trust Fabric: keep your agent framework, add the security overlay
+### Agentic Fabric: keep your agent framework, add the security overlay
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/permguard/.github/main/assets/readme/atf-dark.png">
-    <img src="https://raw.githubusercontent.com/permguard/.github/main/assets/readme/atf-light.png" alt="ADK, LangChain or any other agent framework, under the Permguard security overlay at protocol level: authority continuity with PIC, Trust Anchors as guardrails in the protocol, governance with evidence of every step. Alice's and Bob's executions run on separate tracks, authority narrowing at each step; a hop from one to the other is blocked." width="820">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/permguard/.github/main/assets/readme/fabric-dark.png">
+    <img src="https://raw.githubusercontent.com/permguard/.github/main/assets/readme/fabric-light.png" alt="Permguard Agentic Fabric. The Agentic Trust Fabric (Trust Anchors, PIC, Composition Gate) establishes what can be trusted and verifies every execution step. The Agentic Execution Fabric (human in the loop, orchestration, choreography, transport) determines how execution flows. Agent connectors plug in LangChain, Google ADK, Microsoft Agent Framework, Strands Agents and more. Agents think. AEF executes. ATF ensures trust." width="820">
   </picture>
 </p>
 
-An AI agent is not an enforcement point you can trust to honour a deny.
-The Agentic Trust Fabric moves the guarantee into the protocol, as an overlay on the framework you already use to build agents.
+**Agents think. AEF executes. ATF ensures trust.**
+Keep the agent framework your teams already use, and plug it into the fabric through an agent connector.
+
+- **Agentic Trust Fabric (ATF)** establishes what can be trusted: Trust Anchors hold the policies for authority and continuity, PIC carries authority from step to step, and the Composition Gate controls how authority is combined.
+- **Agentic Execution Fabric (AEF)** determines how execution flows: orchestration, choreography and transport, with a human in the loop for review, approval, oversight and intervention.
+
+What it means in practice, within the protocol itself:
 
 - **Authority only shrinks.** Each step can do at most what the task was granted, even when the agent holds other access.
-- **Guardrails are part of the protocol.** Within the protocol itself, a step that skips one is never valid.
-- **Executions never mix.** Within the protocol itself, authority granted for one task cannot be carried into another.
+- **Guardrails are part of the protocol.** A step that skips one is never valid.
+- **Executions never mix.** Authority granted for one task cannot be carried into another.
+
+The Agentic Fabric is in development.
+Guarantees hold within the protocol itself, under the model's stated assumptions.
+
+<details>
+<summary><b>Under the hood: PIC in thirty seconds</b></summary>
 
 | Proof   | Name                  | What it proves                                         |
 | ------- | --------------------- | ------------------------------------------------------ |
@@ -137,16 +148,16 @@ The Agentic Trust Fabric moves the guarantee into the protocol, as an overlay on
 | **PoR** | Proof of Relationship | This step continues exactly that one.                  |
 | **PoC** | Proof of Continuity   | The whole chain continues, and authority only narrows. |
 
-**Trust Anchor:** the PDP's policy engine behind a second interface.
+A Trust Anchor is the PDP's policy engine behind a second interface.
 It returns signed permissions that the protocol intersects along the execution, so a step that skipped the guardrail has no valid continuation.
-
-Core theorems machine-checked in Lean 4, to be presented at IEEE NCA 2026.
-Guarantees hold within the protocol itself, under the model's stated assumptions.
+Core theorems are machine-checked in Lean 4, and the work will be presented at IEEE NCA 2026.
 Learn more at [pic-protocol.org](https://www.pic-protocol.org).
+
+</details>
 
 ## Where to start
 
-- **Building AI agents?** Keep your framework and add the Agentic Trust Fabric: authority that follows each task and only shrinks, with guardrails built into the protocol.
+- **Building AI agents?** Keep your framework and plug it into the Agentic Fabric: authority that follows each task and only shrinks, with guardrails built into the protocol.
 - **Running applications or infrastructure, with or without agents?** Integrate the Policy Decision Point: one rulebook, governed like code, with evidence for every decision.
 
 Three questions for any AI agent project:
