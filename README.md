@@ -25,19 +25,13 @@
 <h3 align="center">Two products. One idea: authority you can verify.</h3>
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/permguard/.github/main/assets/readme/products-dark.png">
-    <img src="https://raw.githubusercontent.com/permguard/.github/main/assets/readme/products-light.png" alt="Policy Decision Point, available: check the policy before you go on. Policy as code in Cedar and Rego, decides next to the workload, decisions kept as signed evidence; for applications, gateways and infrastructure. Agentic Fabric, in development: keep your agent framework, add the security overlay. Authority only shrinks, guardrails inside the protocol, executions never mix; for AI agents, with any agent framework." width="820">
-  </picture>
+  <img src="https://raw.githubusercontent.com/permguard/.github/main/assets/readme/products-dark.png" alt="Policy Decision Point, available: check the policy before you go on. Policy as code in Cedar and Rego, decides next to the workload, decisions kept as signed evidence; for applications, gateways and infrastructure. Agentic Fabric, in development: keep your agent framework, add the security overlay. Authority only shrinks, guardrails inside the protocol, executions never mix; for AI agents, with any agent framework." width="820">
 </p>
 
 ## The problem
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/permguard/.github/main/assets/readme/problem-dark.png">
-    <img src="https://raw.githubusercontent.com/permguard/.github/main/assets/readme/problem-light.png" alt="Alice authorizes an AI agent to read her documents for a review; Bob authorizes it to send institutional email. Each check says yes. The agent combines both, crosses the intended boundary, and Alice's documents leave by email." width="820">
-  </picture>
+  <img src="https://raw.githubusercontent.com/permguard/.github/main/assets/readme/problem-dark.png" alt="Alice authorizes an AI agent to read her documents for a review; Bob authorizes it to send institutional email. Each check says yes. The agent combines both, crosses the intended boundary, and Alice's documents leave by email." width="820">
 </p>
 
 **Every check says yes. Nobody authorized the outcome.**
@@ -46,10 +40,7 @@ AI agents combine permissions that are valid one by one into actions nobody gran
 ## Policy Decision Point
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/permguard/.github/main/assets/readme/pdp-dark.png">
-    <img src="https://raw.githubusercontent.com/permguard/.github/main/assets/readme/pdp-light.png" alt="Ask, decide, enforce: your application, gateway or component asks; Permguard evaluates the verified policy; the component applies the answer, permit or deny." width="820">
-  </picture>
+  <img src="https://raw.githubusercontent.com/permguard/.github/main/assets/readme/pdp-dark.png" alt="Ask, decide, enforce: your application, gateway or component asks; Permguard evaluates the verified policy; the component applies the answer, permit or deny." width="820">
 </p>
 
 **Available now, open source.**
@@ -75,10 +66,7 @@ brew install permguard/tap/cli
 ## Agentic Fabric
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/permguard/.github/main/assets/readme/fabric-dark.png">
-    <img src="https://raw.githubusercontent.com/permguard/.github/main/assets/readme/fabric-light.png" alt="Permguard Agentic Fabric. The Agentic Trust Fabric (Trust Anchors, PIC, Composition Gate) establishes what can be trusted and verifies every execution step. The Agentic Execution Fabric (human in the loop, orchestration, choreography, transport) determines how execution flows, and Soglia is the runtime that implements it: one fresh, isolated Execution per call, authority becomes physical, effects stay mediated. Agent connectors plug in LangChain, Google ADK, Microsoft Agent Framework, Strands Agents and more. Agents think. AEF executes. ATF ensures trust." width="820">
-  </picture>
+  <img src="https://raw.githubusercontent.com/permguard/.github/main/assets/readme/fabric-dark.png" alt="Permguard Agentic Fabric. The Agentic Trust Fabric (Trust Anchors, PIC, Composition Gate) establishes what can be trusted and verifies every execution step. The Agentic Execution Fabric (human in the loop, orchestration, choreography, transport) determines how execution flows, and Soglia is the runtime that implements it: one fresh, isolated Execution per call, authority becomes physical, effects stay mediated. Agent connectors plug in LangChain, Google ADK, Microsoft Agent Framework, Strands Agents and more. Agents think. AEF executes. ATF ensures trust." width="820">
 </p>
 
 **In development.**
@@ -106,10 +94,7 @@ Learn more at [pic-protocol.org](https://www.pic-protocol.org).
 ## Why permissions are not enough
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/permguard/.github/main/assets/readme/residual-dark.png">
-    <img src="https://raw.githubusercontent.com/permguard/.github/main/assets/readme/residual-light.png" alt="Left: risk falls through security controls into a basin holding a chosen residual and a structural residual, what the protocol cannot see. Right: two executions climb the lineage axis L and project onto the same point (o, r) of the operation-resource plane." width="820">
-  </picture>
+  <img src="https://raw.githubusercontent.com/permguard/.github/main/assets/readme/residual-dark.png" alt="Left: risk falls through security controls into a basin holding a chosen residual and a structural residual, what the protocol cannot see. Right: two executions climb the lineage axis L and project onto the same point (o, r) of the operation-resource plane." width="820">
 </p>
 
 **Same key. Same bytes. Different history.**
