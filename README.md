@@ -115,8 +115,7 @@ Learn more at [pic-protocol.org](https://www.pic-protocol.org).
 **Same key. Same bytes. Different history.**
 A token sees the operation and the resource, not the execution: PIC adds the missing coordinate.
 
-<details>
-<summary><b>Security, governance and residual risk</b></summary>
+### Security, governance and residual risk
 
 | Verb        | Who           | What it means                                                                                                    |
 | ----------- | ------------- | ---------------------------------------------------------------------------------------------------------------- |
@@ -127,8 +126,6 @@ A token sees the operation and the resource, not the execution: PIC adds the mis
 Governance can accept residual risk.
 It cannot eliminate a security distinction that the protocol is unable to represent.
 And not every residual risk may be accepted: in regulated sectors, laws and compliance requirements can rule some of it out.
-
-</details>
 
 ## Repositories
 
