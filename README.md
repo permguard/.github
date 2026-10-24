@@ -22,15 +22,16 @@
   <a href="https://raw.githubusercontent.com/permguard/.github/main/assets/permguard-brochure-en.pdf"><b>Brochure (PDF)</b></a>
 </p>
 
-**Permguard is open-source authorization and trust for the agentic era.**
-Policies versioned like code and decided where your software runs, and, for AI agents, authority that follows every step and never expands.
+<h3 align="center">Two products. One idea: authority you can verify.</h3>
 
-## The problem: valid permissions, unauthorized action
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/permguard/.github/main/assets/readme/products-dark.png">
+    <img src="https://raw.githubusercontent.com/permguard/.github/main/assets/readme/products-light.png" alt="Policy Decision Point, available: check the policy before you go on. Policy as code in Cedar and Rego, decides next to the workload, decisions kept as signed evidence; for applications, gateways and infrastructure. Agentic Fabric, in development: keep your agent framework, add the security overlay. Authority only shrinks, guardrails inside the protocol, executions never mix; for AI agents, with any agent framework." width="820">
+  </picture>
+</p>
 
-AI agents pursue goals.
-To reach them, they can try any path they are not forbidden to take, and combine the tools and permissions they hold.
-Stolen credentials remain a risk.
-This is a different one, on top of it: even when no credential is stolen and no single permission is violated, every check says yes and the action still goes beyond what anyone authorized.
+## The problem
 
 <p align="center">
   <picture>
@@ -39,60 +40,10 @@ This is a different one, on top of it: even when no credential is stolen and no 
   </picture>
 </p>
 
-> **The risk is legitimate authority, used in an execution it was never granted to.**
+**Every check says yes. Nobody authorized the outcome.**
+AI agents combine permissions that are valid one by one into actions nobody granted.
 
-## Why today's controls cannot see it
-
-Possession-based authorization, with tokens or capabilities, answers in space: this operation, on this resource.
-Which execution the request belongs to is not part of the question.
-
-- ✅ valid key
-- ✅ permitted operation
-- ✅ right resource
-- ❓ **which execution does it come from?**
-
-A decision that reads only what is possessed cannot tell apart two executions with the same key, operation and resource: by construction, not by bug.
-**Same key. Same bytes. Different history.**
-
-## Security reduces, governance accepts
-
-| Verb        | Who           | What it means                                                                                                    |
-| ----------- | ------------- | ---------------------------------------------------------------------------------------------------------------- |
-| **Reduces** | Security      | Risk reduction through enforceable, binding controls.                                                            |
-| **Remains** | Residual risk | What is left after those controls are applied. It must be identified, assessed and documented.                   |
-| **Accepts** | Governance    | Accountability, regulatory compliance, and the decision to accept what remains, with an owner and with evidence. |
-
-> Governance can accept residual risk.
-> It cannot eliminate a security distinction that the protocol is unable to represent.
-
-Two limits apply before any residual risk is accepted.
-
-1. **It must be visible.** No policy, procedure or indicator can enforce a difference the system cannot see. Accepting it anyway does not reduce the risk: it shifts it onto whoever signs.
-2. **It must be allowed.** Not every residual risk may be accepted. In regulated sectors, laws and compliance requirements can rule some of it out, whatever the business would decide.
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/permguard/.github/main/assets/readme/residual-dark.png">
-    <img src="https://raw.githubusercontent.com/permguard/.github/main/assets/readme/residual-light.png" alt="Left: risk falls through security controls into a basin holding a chosen residual and a structural residual, what the protocol cannot see. Right: two executions climb the lineage axis L and project onto the same point (o, r) of the operation-resource plane." width="820">
-  </picture>
-</p>
-
-The way out is not more governance.
-It is one more piece of information: the execution's causal history, its lineage.
-On the plane of operation and resource two executions are one point; with the lineage they are two.
-**PIC, Provenance Identity Continuity, is the formal model that keeps them apart.**
-
-## Two products, two levels
-
-|                 | **Policy Decision Point**                                                       | **Agentic Trust Fabric**                                         |
-| --------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| **Status**      | Available · open source, Apache-2.0                                             | In development · built on PIC                                    |
-| **Level**       | Application and infrastructure                                                  | The authorization protocol                                       |
-| **Enforced by** | The component that asks, trusted to honour permit or deny                       | The protocol itself, at every step                               |
-| **Answers**     | May this action proceed?                                                        | May this authority continue to the next step?                    |
-| **Use it for**  | Applications, gateways, infrastructure, runtime validation of information flows | AI agents and agent-to-agent workflows, with any agent framework |
-
-### Policy Decision Point: policy as code, decisions as evidence
+## Policy Decision Point
 
 <p align="center">
   <picture>
@@ -101,46 +52,44 @@ On the plane of operation and resource two executions are one point; with the li
   </picture>
 </p>
 
-- **Policy as code.** Cedar and Rego side by side, in a Git-like ledger: content-addressed, versioned, published under a signed head.
-- **Tested offline.** The same engines as the data plane, with no server anywhere.
-- **Close to the workload.** A sidecar, a remote service, or the engines inside your own process.
-- **Fail closed.** When no policy permits, the answer is deny. An abstention never becomes an implicit allow.
-- **Evidence.** Every answer names the exact policies and commit that decided it. Decisions can be recorded as signed, hash-chained evidence.
+**Available now, open source.**
+Policies in Cedar and Rego, versioned like code, decided next to the workload.
 
 ```sh
 brew install permguard/tap/cli
-permguard --help
 ```
 
-Repository: [permguard/permguard](https://github.com/permguard/permguard).
-SDKs for [Go](https://github.com/permguard/sdk-go), [Java](https://github.com/permguard/sdk-java), [.NET](https://github.com/permguard/sdk-netcore), [Node.js](https://github.com/permguard/sdk-node), [Python](https://github.com/permguard/sdk-python) and [Rust](https://github.com/permguard/sdk-rust).
+[permguard/permguard](https://github.com/permguard/permguard) · SDKs for [Go](https://github.com/permguard/sdk-go), [Java](https://github.com/permguard/sdk-java), [.NET](https://github.com/permguard/sdk-netcore), [Node.js](https://github.com/permguard/sdk-node), [Python](https://github.com/permguard/sdk-python) and [Rust](https://github.com/permguard/sdk-rust)
 
-### Agentic Fabric: keep your agent framework, add the security overlay
+<details>
+<summary><b>What you get</b></summary>
+
+- **Policy as code.** Cedar and Rego side by side, in a Git-like ledger: content-addressed, versioned, published under a signed head.
+- **Tested offline.** The same engines as the data plane, with no server anywhere.
+- **Close to the workload.** A sidecar, a remote service, or the engines inside your own process.
+- **Fail closed.** When no policy permits, the answer is deny.
+- **Evidence.** Every answer names the exact policies and commit that decided it, and can be recorded as signed, hash-chained evidence.
+
+</details>
+
+## Agentic Fabric
 
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/permguard/.github/main/assets/readme/fabric-dark.png">
-    <img src="https://raw.githubusercontent.com/permguard/.github/main/assets/readme/fabric-light.png" alt="Permguard Agentic Fabric. The Agentic Trust Fabric (Trust Anchors, PIC, Composition Gate) establishes what can be trusted and verifies every execution step. The Agentic Execution Fabric (human in the loop, orchestration, choreography, transport) determines how execution flows. Agent connectors plug in LangChain, Google ADK, Microsoft Agent Framework, Strands Agents and more. Agents think. AEF executes. ATF ensures trust." width="820">
+    <img src="https://raw.githubusercontent.com/permguard/.github/main/assets/readme/fabric-light.png" alt="Permguard Agentic Fabric. The Agentic Trust Fabric (Trust Anchors, PIC, Composition Gate) establishes what can be trusted and verifies every execution step. The Agentic Execution Fabric (human in the loop, orchestration, choreography, transport) determines how execution flows, and Soglia is the runtime that implements it: one fresh, isolated Execution per call, authority becomes physical, effects stay mediated. Agent connectors plug in LangChain, Google ADK, Microsoft Agent Framework, Strands Agents and more. Agents think. AEF executes. ATF ensures trust." width="820">
   </picture>
 </p>
 
-**Agents think. AEF executes. ATF ensures trust.**
-Keep the agent framework your teams already use, and plug it into the fabric through an agent connector.
-
-- **Agentic Trust Fabric (ATF)** establishes what can be trusted: Trust Anchors hold the policies for authority and continuity, PIC carries authority from step to step, and the Composition Gate controls how authority is combined.
-- **Agentic Execution Fabric (AEF)** determines how execution flows: orchestration, choreography and transport, with a human in the loop for review, approval, oversight and intervention.
-
-What it means in practice, within the protocol itself:
-
-- **Authority only shrinks.** Each step can do at most what the task was granted, even when the agent holds other access.
-- **Guardrails are part of the protocol.** A step that skips one is never valid.
-- **Executions never mix.** Authority granted for one task cannot be carried into another.
-
-The Agentic Fabric is in development.
-Guarantees hold within the protocol itself, under the model's stated assumptions.
+**In development.**
+Keep your agent framework and plug it in: authority only shrinks, guardrails live inside the protocol, executions never mix.
 
 <details>
-<summary><b>Under the hood: PIC in thirty seconds</b></summary>
+<summary><b>How it works</b></summary>
+
+- **Agentic Trust Fabric (ATF)** establishes what can be trusted: Trust Anchors hold the policies for authority and continuity, PIC carries authority from step to step, the Composition Gate controls how authority is combined.
+- **Agentic Execution Fabric (AEF)** determines how execution flows: orchestration, choreography and transport, with a human in the loop.
+- **[Soglia](https://github.com/permguard/soglia)** is the runtime that implements the AEF: every call runs in its own isolated Execution, where authority becomes physical, and effects leave only through mediated boundaries.
 
 | Proof   | Name                  | What it proves                                         |
 | ------- | --------------------- | ------------------------------------------------------ |
@@ -148,23 +97,38 @@ Guarantees hold within the protocol itself, under the model's stated assumptions
 | **PoR** | Proof of Relationship | This step continues exactly that one.                  |
 | **PoC** | Proof of Continuity   | The whole chain continues, and authority only narrows. |
 
-A Trust Anchor is the PDP's policy engine behind a second interface.
-It returns signed permissions that the protocol intersects along the execution, so a step that skipped the guardrail has no valid continuation.
 Core theorems are machine-checked in Lean 4, and the work will be presented at IEEE NCA 2026.
+Guarantees hold within the protocol itself, under the model's stated assumptions.
 Learn more at [pic-protocol.org](https://www.pic-protocol.org).
 
 </details>
 
-## Where to start
+## Why permissions are not enough
 
-- **Building AI agents?** Keep your framework and plug it into the Agentic Fabric: authority that follows each task and only shrinks, with guardrails built into the protocol.
-- **Running applications or infrastructure, with or without agents?** Integrate the Policy Decision Point: one rulebook, governed like code, with evidence for every decision.
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/permguard/.github/main/assets/readme/residual-dark.png">
+    <img src="https://raw.githubusercontent.com/permguard/.github/main/assets/readme/residual-light.png" alt="Left: risk falls through security controls into a basin holding a chosen residual and a structural residual, what the protocol cannot see. Right: two executions climb the lineage axis L and project onto the same point (o, r) of the operation-resource plane." width="820">
+  </picture>
+</p>
 
-Three questions for any AI agent project:
+**Same key. Same bytes. Different history.**
+A token sees the operation and the resource, not the execution: PIC adds the missing coordinate.
 
-1. What exactly is each agent authorized to do, in each task?
-2. Can we stop one task without stopping everything else?
-3. Can we prove what happened, after the fact?
+<details>
+<summary><b>Security, governance and residual risk</b></summary>
+
+| Verb        | Who           | What it means                                                                                                    |
+| ----------- | ------------- | ---------------------------------------------------------------------------------------------------------------- |
+| **Reduces** | Security      | Risk reduction through enforceable, binding controls.                                                            |
+| **Remains** | Residual risk | What is left after those controls are applied. It must be identified, assessed and documented.                   |
+| **Accepts** | Governance    | Accountability, regulatory compliance, and the decision to accept what remains, with an owner and with evidence. |
+
+Governance can accept residual risk.
+It cannot eliminate a security distinction that the protocol is unable to represent.
+And not every residual risk may be accepted: in regulated sectors, laws and compliance requirements can rule some of it out.
+
+</details>
 
 ## Repositories
 
@@ -172,19 +136,16 @@ Three questions for any AI agent project:
 | --------------------------------------------------------- | ------------------------------------------------------------------- | -------------- |
 | [permguard](https://github.com/permguard/permguard)       | The Policy Decision Point: CLI, control plane, data plane           | Available      |
 | [soglia](https://github.com/permguard/soglia)             | Trusted execution for AI agents, under authority that never expands | In development |
-| [sdk-go](https://github.com/permguard/sdk-go)             | Go SDK                                                              | Available      |
-| [sdk-java](https://github.com/permguard/sdk-java)         | Java SDK                                                            | Available      |
-| [sdk-netcore](https://github.com/permguard/sdk-netcore)   | .NET SDK                                                            | Available      |
-| [sdk-node](https://github.com/permguard/sdk-node)         | Node.js SDK                                                         | Available      |
-| [sdk-python](https://github.com/permguard/sdk-python)     | Python SDK                                                          | Available      |
-| [sdk-rust](https://github.com/permguard/sdk-rust)         | Rust SDK                                                            | Available      |
 | [homebrew-tap](https://github.com/permguard/homebrew-tap) | Homebrew tap for the CLI                                            | Available      |
 
-## The research
+<details>
+<summary><b>The research</b></summary>
 
 - N. Gallo, *Proof-of-Continuity: A Temporal Model for Authority Propagation in Distributed Systems and AI Agents*, [arXiv:2607.08906](https://arxiv.org/abs/2607.08906).
 - N. Gallo, *Beyond Proof of Possession: A Relational Theory of Authority*, [zenodo.org/records/23102206](https://zenodo.org/records/23102206).
 - N. Gallo, *Full Provenance on the COSS Causal Axis*, [zenodo.org/records/23102373](https://zenodo.org/records/23102373).
+
+</details>
 
 ---
 
